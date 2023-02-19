@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/icon.svg" sizes="96x96" type="image/svg">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230219172700">
+	<title>Todo List</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__bg-ibg">
+				<picture>
+					<source srcset="img/notepad.webp" type="image/webp"><img class="" width="1202" height="1280" aria-hidden="true" src="img/notepad.webp" alt="notepad.">
+				</picture>
+			</div>
+			<div class="page__container">
+				<div class="page__to-do to-do">
+					<h1 class="to-do__title">Список дел</h1>
+					<input type="text" class="to-do__enter" placeholder="Записывай быстрее, а то забудешь">
+					<div class="to-do__buttons">
+						<button class="to-do__button-add btn" type="button">Добавить задание</button>
+						<button class="to-do__button-delete btn" type="button">Удалить все задания</button>
+					</div>
+					<ul class="to-do__list">
+					</ul>
+				</div>
+			</div>
+			<div class="page__question question">
+				<div class="question__body">
+					<div class="question__caption">Братан, ты уверен? Удалять?</div>
+					<div class="question__buttons">
+						<button class="question__button btn btn--yes" type="button" data-agreemenе="true">да, давай
+							<svg viewBox="0 0 352 288" role="img" aria-label="delete ok." fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M336 16L112 272L16 176" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+						<button class="question__button btn btn--no" type="button" data-agreemenе="false">нет, психанул
+							<svg viewBox="0 0 12 12" role="img" aria-label="delete no." fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.192 0.343994L5.94903 4.58599L1.70703 0.343994L0.29303 1.75799L4.53503 5.99999L0.29303 10.242L1.70703 11.656L5.94903 7.41399L10.192 11.656L11.606 10.242L7.36403 5.99999L11.606 1.75799L10.192 0.343994Z" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230219172700"></script>
+	<script src="js/app.min.js?_v=20230219172700"></script>
+</body>
+
+</html>
